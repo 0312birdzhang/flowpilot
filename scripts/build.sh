@@ -16,9 +16,9 @@ build_flowy() {
 build_scons() {
   echo "Building with scons..."
   ## libusb
-  ~/.buildozer/android/platform/android-ndk-r25b/ndk-build -C third_party/libusb/android/jni USE_PC_NAME=1
+  ~/.buildozer/android/platform/android-ndk-r28c/ndk-build -C third_party/libusb/android/jni USE_PC_NAME=1
   ## libjson11
-  ~/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android30-clang++ -shared third_party/json11/json11.cpp -fPIC -O3 -o third_party/json11/libjson11.so
+  ~/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android30-clang++ -shared third_party/json11/json11.cpp -fPIC -O3 -o third_party/json11/libjson11.so
   ## liblmdb
   cd third_party/lmdb
   make

@@ -13,7 +13,7 @@ class CapnpRecipe(Recipe):
     def get_recipe_env(self, arch, **kwargs):
         env = super().get_recipe_env(arch)
         env['ANDROID_NDK_ROOT'] = self.ctx.ndk_dir
-        env['NDK_VERSION'] = 'android-ndk-r25b'
+        env['NDK_VERSION'] = 'android-ndk-r28c'
         env['PATH'] = '{}:{}'.format(self.ctx.ndk.llvm_prebuilt_dir, env['PATH'])
         return env
 

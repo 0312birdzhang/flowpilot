@@ -68,7 +68,7 @@ else:
   ldflags = []
 
 lenv = {
-  "PATH": f"{home}/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/:{home}/.venv/bin:/bin:/usr/local/bin/", #os.environ['PATH'],
+  "PATH": f"{home}/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/:{home}/.venv/bin:/bin:/usr/local/bin/", #os.environ['PATH'],
   "LD_LIBRARY_PATH": [Dir("#").abspath + "/flowy/.buildozer/android/platform/build-arm64-v8a/build/libs_collections/oscservice/arm64-v8a"],
   "PYTHONPATH": Dir("#").abspath + ':' + Dir(f"#third_party/acados").abspath,
 
@@ -152,8 +152,8 @@ env = Environment(
     "#flowy/.buildozer/android/platform/build-arm64-v8a/build/python-installs/oscservice/arm64-v8a/numpy/core/include/",
   ],
 
-  CC=f'clang --target=aarch64-linux-android24 --sysroot={home}/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot',
-  CXX=f'clang++ --target=aarch64-linux-android24 --sysroot={home}/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot',
+  CC=f'clang --target=aarch64-linux-android24 --sysroot={home}/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/sysroot',
+  CXX=f'clang++ --target=aarch64-linux-android24 --sysroot={home}/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/sysroot',
   LINKFLAGS=ldflags,
   AR='llvm-ar',
   RANLIB='llvm-ranlib',

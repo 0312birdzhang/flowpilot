@@ -31,6 +31,7 @@ class AcadosRecipe(Recipe):
                     '-DACADOS_WITH_QPOASES=ON',
                     '-UBLASFEO_TARGET',
                     '-DBLASFEO_TARGET=ARMV8A_ARM_CORTEX_A57',
+                    '-DCMAKE_C_FLAGS="-includestdlib.h"',
 
                     '..',
                     _env=env)

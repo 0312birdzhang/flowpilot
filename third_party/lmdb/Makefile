@@ -18,8 +18,8 @@
 # There may be other macros in mdb.c of interest. You should
 # read mdb.c before changing any of them.
 #
-CC	= ~/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-linux-android31
-AR	= ~/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
+CC	= ~/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-linux-android31
+AR	= ~/.buildozer/android/platform/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
 W	= -W -Wall -Wno-unused-parameter -Wbad-function-cast -Wuninitialized
 THREADS = -pthread
 OPT = -O2 -g -fPIC

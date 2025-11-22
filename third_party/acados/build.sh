@@ -36,7 +36,7 @@ cp -r $DIR/acados_repo/lib $INSTALL_DIR
 rm -rf $DIR/../../third_party/acados/acados_template
 cp -r $DIR/acados_repo/interfaces/acados_template/acados_template $DIR/../../third_party/acados
 #pip3 install -e $DIR/acados/interfaces/acados_template
-
+sed -i '1i add_compile_options(-include stdlib.h)' $DIR/acados_repo/CMakeLists.txt
 # build tera
 cd $DIR/acados_repo/interfaces/acados_template/tera_renderer/
 cargo build --verbose --release
